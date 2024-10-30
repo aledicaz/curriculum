@@ -1,104 +1,341 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Proyecto Currículum Vitae</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <meta name="keywords" content="progamacion, curriculum, web, programador, css, html" />
+    <meta name="description"
+        content="Esta página es sobre mi curriculum con mi información personal, mi experiencia, alguno de mis proyectos y sobre mi información de contacto" />
+    <meta name="author" content="Alexandre Icaza González" />
 </head>
+
 <body>
-    <header>
-        <h1>Tu Nombre</h1>
-        <p>Tu Cargo | Tu Email | Tu Teléfono</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="resumen">
-            <h2>Resumen</h2>
-            <p> Experto en dinámicas internacionales con
-                enfoque en la Perspectiva Global de la ONU y
-                modelos de simulación. Habilidades
-                avanzadas en redacción según normativas
-                APA y sólida experiencia en investigación.
-                Bachillerato Internacional en Física. Destacada
-                trayectoria deportiva y contribuciones al
-                entorno artístico. Actualmente, participo
-                activamente en grupos artísticos de la ESPOL,
-                combinando habilidades artísticas y
-                compromiso universitario. Listo para aportar
-                conocimientos y habilidades al equipo.</p>
-        </section>
-        <section id="experiencia">
+    <div class="container-header">
+        <header>
+            <a class="btn boton-header" href="#contacto">Contacto</a>
+            <nav id="navegacion">
+                <nav id="navegacion">
+                    <ul>
+                        <li><a href="#informacion-personal">Información Personal</a></li>
+                        <li><a href="#habilidades">Tech Stack</a></li>
+                        <li><a href="#experiencia">Experiencia</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+        </header>
+    </div>
+
+    <section id="introducion-perfil" class="introduccion">
+        <div class="container" id="informacion-basica">
+            <img src="imgs/fotoPerfil.JPG" alt="Mi foto personal" />
+            <div id="informacion-texto">
+                <h1>Alexandre Icaza González</h1>
+                <p>Estudiante de Computación | 5to Semestre</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="informacion-personal" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="imgs/exponiendo.jpeg" alt="Exponiendo" class="foto-exponiendo">
+            </div>
+        </div>
+        <div class="sobre-mi">
+            <div class="descripcion">
+                <h2>Acerca de mí</h2>
+                <p>Soy un estudiante de Ciencias de la Computación de Ecuador, apasionado por las nuevas tecnologías
+                    impulsadas por la IA y la programación. Formo parte del club TAWS y tengo un profundo interés en la
+                    música folclórica. Soy miembro del grupo cultural de mi universidad, ¡por lo cual recibo una beca
+                    cultural! Disfruto combinar mi amor por la música y la programación. Constantemente busco
+                    oportunidades para aprender y aplicar mis habilidades en proyectos del mundo real, y espero
+                    colaborar con otros en la comunidad tecnológica.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="habilidades" class="habilidades">
+        <div class="contenido-seccion">
+            <h2>Tech Stack</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="contenedor-techstack">
+
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-solid fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>      
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-npm"></i>
+                            <span>NPM</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-solid fa-file-code"></i>
+                            <span>Shell Script</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>Windows</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-solid fa-chart-bar"></i>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <span>Plotly</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-solid fa-snowflake"></i>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-solid fa-table"></i>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-solid fa-css3"></i>
+                            <span>TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="experiencia">
+        <div class="contenido-seccion">
             <h2>Experiencia</h2>
-            <p>Por ahora en proceso...</p>
-        </section>
-        <section id="educacion">
-            <h2>Educación</h2>
-            <h3>Título de Educación Secundaria - Colegio Americano de Guayaquil</h3><p>(2022)</p>
-            <h3>Título de Bachiller en CIENCIAS</h3>
-            <p>Graduado con Bachillerato Internacional (IB) con especialización en las siguientes asignaturas:</p>
-            <ul>
-                <li>ESPAÑOL A: Lengua y Literatura</li>
-                <li>INGLÉS B</li>
-                <li>FÍSICA (ESP)</li>
-                <li>HISTORIA (ING)</li>
-                <li>QUÍMICA (ESP)</li>
-                <li>MATEMÁTICAS: ANÁLISIS (ESP)</li>
-            </ul>
-        </section>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <h3>Manejo de Herramientas Colaborativas:</h3>
-            <ul>
-                <li>Google Drive, Word, Excel, PowerPoint</li>
-            </ul>
-            
-            <h3>Conocimientos de Programación:</h3>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>HTML</li>
-            </ul>
-            
-            <h3>Habilidades Académicas:</h3>
-            <ul>
-                <li>Investigación</li>
-                <li>Estudio efectivo</li>
-            </ul>
-            
-            <h3>Habilidades Interpersonales:</h3>
-            <ul>
-                <li>Trabajo en equipo</li>
-                <li>Empatía</li>
-                <li>Resolución de conflictos</li>
-                <li>Liderazgo</li>
-            </ul>
-            
-            <h3>Habilidades de Comunicación:</h3>
-            <ul>
-                <li>Comunicación escrita y oral efectiva</li>
-                <li>Redacción de informes</li>
-                <li>Presentaciones en público</li>
-            </ul>
-        </section>
-        <section id="proyectos">
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>Publicación en Medium</h4>
+                        <span class="empresa">TAWS Club</span>
+                        <span class="fecha">11 de junio</span>
+                        <p>Se publicó un artículo en la cuenta de mi club TAWS sobre los algoritmos genéticos y su
+                            implementación en la generación musical. Es posible crear programas que fusionen la
+                            creatividad humana con la potencia de la inteligencia artificial para componer melodías
+                            personalizadas y cautivadoras.
+                            <a
+                                href="https://medium.com/@taws/algoritmos-genéticos-y-su-posible-uso-en-la-música-3beee0b3b459">Leer
+                                más</a>
+                        </p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Evento WIDS (Women in Data Science)</h4>
+                        <span class="empresa">ESPOL</span>
+                        <span class="fecha">13 de julio</span>
+                        <p>Fui parte del staff que llevó a cabo el evento WIDS (Women in Data Science) con sede en la
+                            ESPOL. En el evento participaron más de 10 conferencistas, tanto nacionales como
+                            internacionales, como Miriam Silva.
+                            <a href="https://wids.espol.edu.ec">Página del evento</a>
+                        </p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Proyecto D.Omnis</h4>
+                        <span class="empresa">Bootcamps ESPOL - TIA</span>
+                        <span class="fecha">11 septiembre - act</span>
+                        <p>Formo parte de un equipo de Bootcamps ESPOL que trabaja en un proyecto llamado D.Omnis para
+                            la empresa TIA, buscando la automatización de procesos mediante herramientas de Microsoft
+                            como Power Automate y SharePoint.</p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col imagenes">
+                    <img src="imgs/experiencia/medium.jpeg" alt="Publicación en Medium" class="imagen-experiencia">
+                    <img src="imgs/experiencia/wids.jpeg" alt="Evento WIDS" class="imagen-experiencia">
+                    <img src="imgs/experiencia/tia.jpeg" alt="Proyecto D.Omnis" class="imagen-experiencia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
             <h2>Proyectos</h2>
-        </section>
-    </main>
+            <div class="galeria-proyectos contenedor-proyectos">
+
+                <div class="tarjeta-proyecto">
+                    <div class="contenedor-imagen">
+                        <img src="imgs/appdecontactos.jpg" alt="Imagen de proyecto">
+                        <div class="boton-proyecto">
+                            <a href="https://github.com/Jlchong3/ProyectoEstructuras/tree/main/PrimerParcial"
+                                target="_blank">Ver Código</a>
+                        </div>
+                    </div>
+                    <div class="contenido-tarjeta-proyecto">
+                        <div class="titulo-proyecto">App de Contactos</div>
+                        <div class="descripcion-proyecto">Una app de contactos usando listas doblemente enlazadas.
+                            Permite agregar, eliminar y editar información de los contactos, y se guarda al cerrar la
+                            aplicación, cargándose al abrirla nuevamente.</div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-proyecto">
+                    <div class="contenedor-imagen">
+                        <img src="imgs/tictactoe.jpg" alt="Imagen de proyecto">
+                        <div class="boton-proyecto">
+                            <a href="https://github.com/Jlchong3/ProyectoEstructuras/tree/main/SegundoParcial/tresEnRaya"
+                                target="_blank">Ver Código</a>
+                        </div>
+                    </div>
+                    <div class="contenido-tarjeta-proyecto">
+                        <div class="titulo-proyecto">Tic Tac Toe</div>
+                        <div class="descripcion-proyecto">Un tic tac toe que usa árboles de decisión para generar un
+                            oponente con la computadora. También permite enfrentamientos entre dos jugadores en un mismo
+                            dispositivo.</div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-proyecto">
+                    <div class="contenedor-imagen">
+                        <img src="imgs/algorythms.jpg" alt="Imagen de proyecto">
+                        <div class="boton-proyecto">
+                            <a href="https://drive.google.com/drive/folders/1radxczASt4FiW2rsm372E4ik2ikW_kGk?usp=sharing"
+                                target="_blank">Ver Demo</a>
+                            <a href="https://github.com/aledicaz/proyectoPreTaws" target="_blank">Ver Código</a>
+                        </div>
+                    </div>
+                    <div class="contenido-tarjeta-proyecto">
+                        <div class="titulo-proyecto">Generación de Melodías con IA</div>
+                        <div class="descripcion-proyecto">Una página web que utiliza algoritmos genéticos para generar
+                            melodías a partir de parámetros dados por el usuario. Luego, extiende la melodía con una red
+                            neuronal preentrenada de TensorFlow y un motor de IA genera las letras de la canción.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <form class="col" id="formulario-contacto">
+                    <ul>
+                        <li>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ejem: Alexandre Icaza" required>
+                        </li>
+                        <li>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="Ejem: aledicaz@mail.com" required>
+                        </li>
+                        <li>
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto"
+                                placeholder="Ejem: Planificación de proyecto..." required>
+                        </li>
+                        <li>
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" cols="30" rows="10"
+                                placeholder="Quisiera contactar contigo..." required></textarea>
+                        </li>
+                        <button class="btn" type="submit">Enviar</button>
+                    </ul>
+                </form>
+
+                <div class="col">
+                    <h3>Ubicación</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15948.055288727342!2d-79.9644955!3d-2.1483948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7301d30e8ff5%3A0x73c27660ff5791b!2sCampus%20Gustavo%20Galindo%20Velasco%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1730259188942!5m2!1ses-419!2sec"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div id="como-llegar" class="fila ancho-completo">
+                <div class="col">
+                    <h3>¿Cómo llegar?</h3>
+                    <iframe width="700" height="394" src="https://www.youtube.com/embed/SIXQqe2uXxs"
+                        title="Campus ESPOL" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <footer>
-        <p>© Tu Nombre - 2023</p>
+        <p>© Alexandre Icaza González - 2024</p>
         <ul>
-            <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-            <li><a href="https://github.com/tunombre">GitHub</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/alexandre-icaza-gonzalez/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/aledicaz" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </li>
         </ul>
     </footer>
+
+
 </body>
 </html>
